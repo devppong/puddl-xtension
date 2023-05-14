@@ -17,4 +17,22 @@ To install the Puddl.io extension, follow these steps:
 
 ## Usage
 
-Once the Puddl extension is installed, it will provide you with an option to choose an improved prompt, please use the replace button to use generated prompt
+Once the Puddl extension is installed, it will provide you with an option to choose an improved prompt right on top of the chat input, please use the replace button to use generated prompt
+
+Here's an example of the user interface during the generation process:
+
+![Generation Process](./images/generating_prompt.jpeg)
+
+## Results
+
+Once the results have been generated, you can view them and replace your prompt with an improved version. Here's an example of the user interface after the generation process:
+
+![Post-Generation Results](./images/prompt_generated.jpeg)
+
+## Explanation
+
+If you're unsure about how to interpret the results, don't worry! Here's an example of an explanation that can help you understand the results:
+
+![Explanation](./images/explanation.jpeg)
+
+That's it! If you have any questions or feedback, feel free to contact me.
