@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
       // Set a new timeout
       timeout = setTimeout(() => {
         // Check if the input value starts with "opt:"
-        if (previousStringComputed != input.value) {
+        if (previousStringComputed != input.value && input.value!="") {
           previousStringComputed = input.value
           const popup = document.createElement('div');
           // popup.textContent = 'Hello world!';
@@ -43,7 +43,7 @@ window.addEventListener('load', () => {
 
           // Create the subheader element
           const subheader = document.createElement('h4');
-          subheader.textContent = "Your improved propmpt is loading...."
+          subheader.textContent = "Your improved prompt is loading...."
           // if (subheader.textContent.length > 30) {
           //   subheader.textContent = subheader.textContent.substring(0, 25) + '...';
           // }
