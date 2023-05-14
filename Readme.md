@@ -17,12 +17,4 @@ To install the Puddl.io extension, follow these steps:
 
 ## Usage
 
-Once the Puddl.io extension is installed, it will automatically preload the ChatGPT model at the start of each conversation. You can use the ChatGPT interface as usual, and the model will generate responses much faster than before.
-
-## Contributing
-
-If you would like to contribute to the development of Puddl.io, please see the [contributing guidelines](CONTRIBUTING.md) for more information.
-
-## License
-
-Puddl.io is released under the [MIT License](LICENSE).
+Once the Puddl extension is installed, it will provide you with an option to choose an improved prompt, please use the replace button to use generated prompt
