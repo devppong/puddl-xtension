@@ -63,6 +63,11 @@ window.addEventListener('load', () => {
           replaceButton.style.disabled = generatedPrompt == null
           replaceButton.className = 'replace-button';
 
+                    // Create a loader
+                    const loader = document.createElement('div');
+                    loader.id = 'loader';
+                    loader.style.display = 'none';
+
           // Create the learn more link element
           const learnMoreLink = document.createElement('a');
           learnMoreLink.textContent = 'Powered by puddl.io';
@@ -122,6 +127,7 @@ window.addEventListener('load', () => {
           popup.appendChild(subheader);
           popup.appendChild(replaceButton);
           popup.appendChild(dismissButton);
+          popup.append(loader);
           popup.appendChild(tooltip);
           popup.appendChild(learnMoreLink);
           popup.style.top = input.getBoundingClientRect().top - input.getBoundingClientRect().height - 140 + 'px';
@@ -131,9 +137,12 @@ window.addEventListener('load', () => {
           var data = {
             prompt: input.value
           }
+          loader.style.display = 'inline-block';
+
           chrome.runtime.sendMessage({ type: 'makePostRequest', url: 'https://gpt-4-prompt-optim.kartheekakella.repl.co/optimize', data: data }, function (response) {
             console.log("response")
             console.log(response)
+            loader.style.display = 'none';
             if (response == null) {
               // generatedPrompt = "There was an error processing, please try again",
               subheader.textContent = "There was an error, please keep typing/refresh to retry"

@@ -6,6 +6,38 @@ button.replace-button {
 button.dismiss-button {
     background-color: #c54040;
     color: white;
-    padding: '4px';
-    border-radius: '4px';
 }
+
+#loader {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
+    height: 4px;
+    background-color: #73A77E;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  #loader:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -30%;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    animation: progress 2s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+  
+  @keyframes progress {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
