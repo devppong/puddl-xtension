@@ -1,8 +1,10 @@
 ![Puddl.io Logo](./icon.png)
 
-# Puddl.io
+# Puddl
 
-Puddl.io is a browser extension that improves the performance of the ChatGPT prompt generation. This can significantly improve the quality of responses a user can generate from ChatGPT.
+Puddl XTENSION is a browser extension that improves the performance of the ChatGPT prompt generation. This can significantly improve the quality of responses a user can generate from ChatGPT.
+
+To learn more about our work, please visit [puddl.io](https://puddl.io).
 
 ## Installation
 
