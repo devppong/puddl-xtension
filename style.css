@@ -1,0 +1,11 @@
+button.replace-button {
+    background-color: #73A77E;
+    color: white;
+}
+
+button.dismiss-button {
+    background-color: #c54040;
+    color: white;
+    padding: '4px';
+    border-radius: '4px';
+}

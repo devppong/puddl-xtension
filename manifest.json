@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Puddl Prompt",
+    "description": "Unleash the full potential of Chat GPT",
+    "version": "0.0.1",
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "https://bard.google.com/*",
+            "https://poe.com/*",
+            "https://chat.openai.com/*"
+          ],
+          "js": ["content_script.js"],
+          "css": ["style.css"]
+        }
+      ],
+      "host_permissions": [
+        "https://*.repl.co/*"
+      ],
+      "background": {
+        "service_worker": "background.js"
+      }
+  }
